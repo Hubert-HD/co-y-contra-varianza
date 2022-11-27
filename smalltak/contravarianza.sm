@@ -1,0 +1,10 @@
+| myX myY myImplementsB myImplementsA myB |
+myX := X new.
+myY := Y new.
+myImplementsB := ImplementsB new.
+myImplementsA := ImplementsA new.
+
+myY receive: myImplementsB.
+myY receive: myImplementsA.
+
+myB = myX create.
